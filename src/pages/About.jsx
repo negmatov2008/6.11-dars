@@ -35,7 +35,7 @@ function About() {
               />
             </div>
             <div className="flex flex-col w-[40%] text-white">
-              <h3 className="text-5xl font-bold mb-8 h-[50px]">
+              <h3 className="text-3xl font-bold mb-4 h-[50px]">
                 {product && product.title}
               </h3>
               <div className="flex items-center gap-1 mb-14">
