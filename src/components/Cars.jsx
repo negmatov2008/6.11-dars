@@ -5,7 +5,13 @@ import { Outlet, Link } from "react-router-dom";
 function Card({ id, title, description, price, category, images }) {
   return (
     <div className="p-6 border border-stone-800 rounded-lg w-[350px]">
-      <img className="h-[298px] rounded-md mb-4" src={images[0]} alt={title} />
+      <Link to={"product/" + id}>
+        <img
+          className="h-[298px] rounded-md mb-4"
+          src={images[0]}
+          alt={title}
+        />
+      </Link>
       <h3 className="text-xl mb-1 h-[50px]">{title}</h3>
       <div className="flex items-center gap-1 mb-4">
         <p className="truncate text-slate-500 ">{description}</p>
